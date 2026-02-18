@@ -1,0 +1,6 @@
+sudo tcpdump -i eth0
+sudo tcpdump -i eth0 -w capture.pcap
+sudo tcpdump -i eth0 tcp
+sudo tcpdump -i eth0 port 80
+sudo tcpdump -i eth0 host 192.168.56.101
+/*wireshark capture.pcap*/(open wireshark)

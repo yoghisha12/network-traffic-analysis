@@ -1,0 +1,2 @@
+alert tcp any any -> any 22 (msg:"SSH Brute Force Attempt"; flags:S; threshold:type both, track by_src, count 5, seconds 60; sid:1000001;)
+alert icmp any any -> any any (msg:"ICMP Flood Detected"; sid:1000002;)
